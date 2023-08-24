@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html"
+      xmlns:float="http://www.w3.org/1999/xhtml">
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- Bootstrap Bundle JS (jsDelivr CDN) -->
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+            crossorigin="anonymous"></script>
+    <link href="styleW.css" rel="stylesheet"/>
+    <title>Работа</title>
+</head>
+<body>
+<div class="navbar">
+    <a href="regist.html">Зарегестрироваться</a>
+    <a href="login.html">Войти</a>
+    <a href="watermelon.html">Купить арбуз</a>
+    <a href="details.html">Продробности</a>
+    <a href="getJob.html">Устроиться к нам</a>
+</div>
+<div class="sheet">
+
+    <div class="job">
+        <p>Если хотите рабоать у нас: <br>
+            рабочие дни по 8 часов +2 часа дорога от пункта <br>
+            выращивания, до остановки график 2\2<br>
+            З\П - 60.000 руб, при отсутствии замечаний и опозданий <br>
+            Возможно повышение и премии, идеи об улучшение <br>
+            выращивания предлагать главному по смене<br>
+            ЗАПРЕЩАЕТСЯ: употреблять алкоголь\наркотики, <br>
+            не выполнять данную работу<br>
+            Курить только в предназначенных для этого местах: <br>
+            (3шт на площадки на территории)<br>
+            Обеденное время с 12 до 13:45 <br>
+            столовая для персонала, разрешено брать еду из дома<br>
+        </p>
+    </div>
+
+    <div class="containerForResume">
+        <form id="userForm">
+            <label><input type="text" id="phone" name="Phone" class="form-control" placeholder="Phone"></label><br><br>
+            <label><input type="text" id="email" name="email" class="form-control" placeholder="Email"></label><br><br>
+            <label><input type="text" id="education" name="education" class="form-control"
+                          placeholder="Education"></label><br><br>
+            <label><input type="text" id="experience" name="experience" class="form-control"
+                          placeholder="Experience"></label><br><br>
+            <label><input type="text" id="city" name="city" class="form-control" placeholder="City"></label><br><br>
+            <button type="button" id="sendForm" class="btn btn-outline-success">Подать заявку</button>
+        </form>
+        <div class="resumeResult">
+            <div id="resultMessage"></div>
+        </div>
+        <script src="resume.js"></script>
+        <br><br><br><br><br>
+        <form id="deleteForm">
+            <label><input type="text" id="emailDel" name="Phone" class="form-control"
+                          placeholder="Email"></label><br><br>
+            <button type="button" id="sendFormDel" class="btn btn-outline-danger">Удалить заявку</button>
+        </form>
+        <div class="resumeResult">
+        <div id="resultdelete"></div>
+        <script src="deleteResume.js"></script>
+        </div>
+    </div>
+    <br><br><br><br><br><br><br><br><br>
+</div>
+</body>
+</html>
